@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="/static/css/styles.css">
     <title>Login page</title>
 </head>
 <div class="login-root">
@@ -49,14 +49,14 @@
           <div class="formbg">
             <div class="formbg-inner padding-horizontal--48">
               <span class="padding-bottom--15">Sign in to your account</span>
-              <form id="stripe-login">
+              <form id="stripe-login" method="post">
                 <div class="field padding-bottom--24">
-                    <label for="text">Text</label>
-                    <input type="text" name="text">
+                    <label for="text">Username</label>
+                    <input type="text" name="username" placeholder="Enter Username">
                   </div>
                 <div class="field padding-bottom--24">
                   <label for="email">Email</label>
-                  <input type="email" name="email">
+                  <input type="email" name="email" placeholder="Enter Email">
                 </div>
                 <div class="field padding-bottom--24">
                   <div class="grid--50-50">
@@ -65,16 +65,15 @@
                       <a href="#">Forgot your password?</a>
                     </div>
                   </div>
-                  <input type="password" name="password">
+                  <input type="password" name="password" placeholder="Enter Password">
                 </div>
                 <div class="field padding-bottom--24">
-                    <label for="textarea">Textarea</label>
-                    <textarea name="textarea" id="1" cols="52" rows="5"></textarea>
+                    <label for="textarea">Comment</label>
+                    <textarea name="comment" id="1" cols="52" rows="5" placeholder="Comment Goes Here..." class="comment_holder"></textarea>
                   </div>
                 <div class="field field-checkbox padding-bottom--24 flex-flex align-center">
                   <label for="checkbox">
-                    <input type="radio" name="radio"> Stay signed in for a week
-                  </label>
+                    <input type="radio" name="radio"> Stay signed in.
                 </div>
                 <div class="field padding-bottom--24">
                   <input type="submit" name="submit" value="Continue">

@@ -232,3 +232,9 @@
       transform: translateX(0px);
     }
   } 
+
+  /* LOKI */
+  .comment_holder::placeholder{
+    padding: 0.9rem !important;
+  }
+  /* LOKI */

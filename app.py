@@ -6,8 +6,7 @@ from flask import Flask, request, render_template, url_for, redirect
 app = Flask(__name__, static_url_path='/static')
 
 formDataList = []
-formData = {
-}
+
 
 @app.route("/success")
 def FormData():
@@ -21,12 +20,12 @@ def Index():
         email = request.form["email"]
         password = request.form["password"]
         comment = request.form["comment"]
-        formData.update({
+        formData = {
             "username" : username,
             "email" : email,
             "password" : password,
             "comment" : comment
-        })
+        }
         formDataList.append(formData)
         return redirect(url_for('FormData'))
     else:

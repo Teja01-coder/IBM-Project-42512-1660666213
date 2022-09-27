@@ -12,8 +12,8 @@ def Index():
 def AddJob():
     jobData = {
         "jobId" : 123,
-        "jobTitle" : "ueru",
-        "jobDesc" : "fghnpoihgdty",
+        "Name" : "ueru",
+        "Email" : "fghnpoihgdty",
         "postedOn" : 123456,
         "updatedOn" : 3456789
     }
